@@ -1,0 +1,31 @@
+{
+  "author": {
+    "email": "sami@samihalawa.com",
+    "name": "Sami Halawa"
+  },
+  "description": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.",
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": [
+      "Find Spanish digitalisation grants and verify who can actually apply.",
+      "Check this BDNS call against my profile and identify missing evidence."
+    ],
+    "developerName": "Sami Halawa",
+    "displayName": "Ayudas España",
+    "logo": "./assets/icon.png",
+    "longDescription": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo application submission, automatic eligibility guarantee, bank access, paid grant database, universal regional coverage claim or background alerts.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
+    "shortDescription": "Spanish grants, checked"
+  },
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only",
+    "ayudas-espana"
+  ],
+  "license": "MIT",
+  "name": "ayudas-espana",
+  "skills": "./skills",
+  "version": "0.1.2"
+}

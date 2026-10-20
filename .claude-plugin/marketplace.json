@@ -1,0 +1,19 @@
+{
+  "name": "ayudas-espana",
+  "owner": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "metadata": {
+    "description": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.",
+    "version": "0.1.2"
+  },
+  "plugins": [
+    {
+      "name": "ayudas-espana",
+      "source": "./",
+      "description": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.",
+      "version": "0.1.2"
+    }
+  ]
+}

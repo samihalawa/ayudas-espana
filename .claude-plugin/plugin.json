@@ -1,0 +1,23 @@
+{
+  "name": "ayudas-espana",
+  "displayName": "Ayudas España",
+  "version": "0.1.2",
+  "description": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.",
+  "author": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only"
+  ],
+  "homepage": "https://github.com/samihalawa/ayudas-espana/blob/main/README.md",
+  "repository": "https://github.com/samihalawa/ayudas-espana",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/README.md",
+  "supportUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/TERMS.md"
+}

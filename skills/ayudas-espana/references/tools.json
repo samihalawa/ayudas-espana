@@ -1,0 +1,12 @@
+[
+  {
+    "name": "ayudas_search",
+    "signature": "(query: 'str', page: 'int' = 0, page_size: 'int' = 10) -> 'dict[str, Any]'",
+    "description": "Search official BDNS call descriptions with explicit pagination. A result is not proof that a call is open, competitive or suitable."
+  },
+  {
+    "name": "ayudas_call",
+    "signature": "(bdns_number: 'str') -> 'dict[str, Any]'",
+    "description": "Retrieve the official BDNS call record by its public number, not its internal search ID. Preserve eligibility and deadline fields as published."
+  }
+]

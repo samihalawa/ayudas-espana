@@ -6,6 +6,10 @@ Repository: https://github.com/samihalawa/ayudas-espana
 
 Plugin at repository root. Stable identity: `ayudas-espana`.
 
+Public product page: https://samihalawa.github.io/ayudas-espana/
+
+Saved official-source report: https://samihalawa.github.io/ayudas-espana/demo.html
+
 ## Listing
 
 Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.

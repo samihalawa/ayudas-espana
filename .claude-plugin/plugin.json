@@ -1,8 +1,8 @@
 {
   "name": "ayudas-espana",
   "displayName": "Ayudas España",
-  "version": "0.1.2",
-  "description": "Find Spanish grant calls and separate potentially relevant funding from closed calls, direct awards and unsupported eligibility claims.",
+  "version": "0.2.0",
+  "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,8 +10,11 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "official-data",
-    "read-only"
+    "subvenciones",
+    "ayudas",
+    "bdns",
+    "autonomos",
+    "financiacion"
   ],
   "homepage": "https://github.com/samihalawa/ayudas-espana/blob/main/README.md",
   "repository": "https://github.com/samihalawa/ayudas-espana",

@@ -1,0 +1,169 @@
+{
+  "tool": "ayudas_shortlist",
+  "arguments": {
+    "query": "digitalización",
+    "limit": 3
+  },
+  "captured_at": "2026-10-20T16:20:04.915268+00:00",
+  "note": "Saved public-source example, not a current query or user-owned record.",
+  "result": {
+    "ok": true,
+    "data": [
+      {
+        "bdns_number": "935677",
+        "internal_id": 1137238,
+        "title": "Subvención para actuaciones dirigidas a la modernización, innovación y digitalización de trabajadores autónomos, microempresas y pequeñas empresas, en el municipio de Llucmajor 2026",
+        "received_date": "2026-10-16",
+        "administration": [
+          "LOCAL",
+          "LLUCMAJOR",
+          "AYUNTAMIENTO DE LLUCMAJOR"
+        ],
+        "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/935677",
+        "application_status": "official_bases_and_portal_not_verified",
+        "call_type": "Concurrencia competitiva - canónica",
+        "direct_award_signal": false,
+        "budget_total_eur": 84177.81,
+        "beneficiary_types": [
+          {
+            "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+          }
+        ],
+        "regions": [
+          {
+            "descripcion": "ES532 - Mallorca"
+          }
+        ],
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "deadline_not_established",
+          "start_date": null,
+          "end_date": null,
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "bases_url": "https://llucmajor.org/es/anuncios",
+        "application_url": "https://seu.llucmajor.org/sta/CarpetaPublic/doEvent?APP_CODE=STA&PAGE_CODE=PTS_HOME",
+        "raw_abierto": false
+      },
+      {
+        "bdns_number": "933791",
+        "internal_id": 1135352,
+        "title": "Convenio de colaboración del Ayuntamiento de Elche con AEC en actividades de asesoramiento, investigación, innovación, digitalización, promoción, formación a las empresas de Elche. 2026",
+        "received_date": "2026-10-06",
+        "administration": [
+          "LOCAL",
+          "ELCHE/ELX",
+          "AYUNTAMIENTO DE ELCHE/ELX"
+        ],
+        "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/933791",
+        "application_status": "official_bases_and_portal_not_verified",
+        "call_type": "Concesión directa - instrumental",
+        "direct_award_signal": true,
+        "budget_total_eur": 12000,
+        "beneficiary_types": [
+          {
+            "descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"
+          }
+        ],
+        "regions": [
+          {
+            "descripcion": "ES521 - Alicante / Alacant"
+          }
+        ],
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "past_end_date",
+          "start_date": "2026-01-01",
+          "end_date": "2026-10-05",
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "bases_url": "https://www.dip-alicante.es/bop2/pdftotal/2026/01/27_17/2026_000514.pdf",
+        "application_url": "sede.elche.es",
+        "raw_abierto": false
+      },
+      {
+        "bdns_number": "932105",
+        "internal_id": 1133666,
+        "title": "SUBVENCIÓN PREMIOS GLOBAL TECH DIGITALIZACION",
+        "received_date": "2026-09-28",
+        "administration": [
+          "AUTONOMICA",
+          "COMUNIDAD DE MADRID",
+          "CONSEJERÍA DE DIGITALIZACIÓN"
+        ],
+        "official_url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatoria/932105",
+        "application_status": "official_bases_and_portal_not_verified",
+        "call_type": "Concurrencia competitiva - canónica",
+        "direct_award_signal": false,
+        "budget_total_eur": 500,
+        "beneficiary_types": [
+          {
+            "descripcion": "GRAN EMPRESA"
+          },
+          {
+            "descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"
+          }
+        ],
+        "regions": [
+          {
+            "descripcion": "ES - ESPAÑA "
+          }
+        ],
+        "deadline_assessment": {
+          "as_of": "2026-10-20",
+          "date_state": "deadline_not_established",
+          "start_date": null,
+          "end_date": null,
+          "eligibility_verified": false,
+          "portal_status_verified": false
+        },
+        "bases_url": "PENDIENTE DE PUBLICACIÓN",
+        "application_url": null,
+        "raw_abierto": false
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&page=0&pageSize=3&descripcion=digitalizaci%C3%B3n",
+        "retrieved_at": "2026-10-20T16:19:41.605857+00:00",
+        "sha256": "baca45916266ec647b1e0f9fe2e53ad926a2f8cb5883d6724a1780a3d21995e6",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=935677",
+        "retrieved_at": "2026-10-20T16:19:41.961486+00:00",
+        "sha256": "30a8aaaa03f2995cc84af15c78d26706dba2318ff41ab5c6c22fa1244c167519",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=933791",
+        "retrieved_at": "2026-10-20T16:19:42.343559+00:00",
+        "sha256": "c0f2982bba2b63398a5af2fcba442b4b5d1786edd4e6546a5ea7862077014689",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=932105",
+        "retrieved_at": "2026-10-20T16:19:42.920604+00:00",
+        "sha256": "0b53566809f3b57e7da3654b577c6cfbb4115c1cd5e9dc26a3afb8b6e7baebb6",
+        "cache_hit": false
+      }
+    ],
+    "coverage": {
+      "page": 0,
+      "page_size": 3,
+      "total": 732,
+      "next_page": 1,
+      "details_checked": 3,
+      "partial": false,
+      "as_of": "2026-10-20"
+    },
+    "warnings": [
+      "Search results include historical calls and direct/nominative awards. Read each call and its legal bases to establish who may apply and whether a deadline remains open.",
+      "La reutilización de los datos del Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas está sujeta a una serie de restricciones y consideraciones legales. Consulte el aviso legal en https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal.Además, el usuario debe ser consciente que la información presentada es de naturaleza dinámica, y que los datos pueden ser sometidos a correcciones, inserciones, modificaciones y eliminaciones en momentos posteriores a su extracción. Accesos al API del sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas. La Administración Presupuestaria, para salvaguardar la protección del acceso libre e irrestricto de los ciudadanos a este Portal y a su información podrá adoptar medidas restrictivas de acceso al API ante situaciones de manifiesto abuso del servicio, riesgos de seguridad, o uso fraudulento de la información descargada, de acuerdo con las buenas prácticas de gestión de datos abiertos (https://datos.gob.es/es/blog/limitaciones-la-consulta-de-una-api) establecidas por el Ministerio para la Transformación Digital y de la Función Pública.",
+      "Date triage is not an open-call certification. The source abierto flag is preserved, not used as a definitive open/closed flag. Direct-award text signals require checking the actual legal bases."
+    ],
+    "notice": "Independent software by Sami Halawa; not an official government service. Verify consequential decisions in the official source."
+  }
+}

@@ -8,5 +8,10 @@
     "name": "ayudas_call",
     "signature": "(bdns_number: 'str') -> 'dict[str, Any]'",
     "description": "Retrieve the official BDNS call record by its public number, not its internal search ID. Preserve eligibility and deadline fields as published."
+  },
+  {
+    "name": "ayudas_shortlist",
+    "signature": "(query: 'str', page: 'int' = 0, limit: 'int' = 5, as_of: 'str' = '') -> 'dict[str, Any]'",
+    "description": "Search and inspect up to five BDNS records. Distinguishes date triage and direct-award signals from verified eligibility; partial failures stay visible."
   }
 ]

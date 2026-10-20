@@ -1,0 +1,36 @@
+{
+  "name": "Ayudas España",
+  "promise": "De una ayuda publicada a un próximo paso claro.",
+  "audience": "Autónomos, empresas y entidades que buscan financiación pública.",
+  "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
+  "short": "Ayudas y próximos pasos",
+  "source": "BDNS",
+  "keywords": [
+    "subvenciones",
+    "ayudas",
+    "bdns",
+    "autonomos",
+    "financiacion"
+  ],
+  "prompts": [
+    "Soy autónomo en Madrid: busca ayudas de digitalización y dime qué debo comprobar.",
+    "Compara estas convocatorias por plazo, beneficiarios, documentación y próximo paso.",
+    "Muéstrame un ejemplo guardado sin presentarlo como una convocatoria actual."
+  ],
+  "benefits": [
+    "Búsqueda y detalle de hasta cinco convocatorias por consulta.",
+    "Plazos, beneficiarios y bases visibles en la misma ficha.",
+    "Señales de concesión directa y fallos parciales explícitos."
+  ],
+  "critique": "Las funciones separadas obligaban a reconstruir cada convocatoria. La promesa de elegibilidad era más fuerte que la verificación disponible.",
+  "change": "Shortlist con detalle de llamadas, fechas, beneficiarios y bases; señales de concesión directa sin una falsa garantía de elegibilidad.",
+  "limits": "Hasta cinco detalles por llamada. Fechas, abierto y palabras como nominativa no sustituyen bases, modificaciones y sede. No presenta solicitudes ni garantiza financiación.",
+  "tool": "ayudas_shortlist",
+  "args": {
+    "query": "digitalización",
+    "limit": 3
+  },
+  "extra": "Empieza con ayudas_shortlist; amplía con ayudas_search y ayudas_call. No interpretes abierto:false como cierre automático. direct_award_signal es un indicio textual, no una clasificación jurídica confirmada.",
+  "slug": "ayudas-espana",
+  "version": "0.2.0"
+}

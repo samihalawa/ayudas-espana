@@ -17,7 +17,7 @@ Read `references/runtime.md` before external access and `references/workflow.md`
 
 Empieza con ayudas_shortlist; amplía con ayudas_search y ayudas_call. No interpretes abierto:false como cierre automático. direct_award_signal es un indicio textual, no una clasificación jurídica confirmada.
 
-Start with `ayudas_shortlist` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
+Start with `ayudas_opportunities` when its inputs match the task. Check `ok`, dates, partial errors, coverage and continuation before interpreting results. Provider failure is not an empty search. Follow the requested scope and state unexamined portions.
 
 Lead with the supported result and next action, not a tool transcript. Separate verified source facts, user facts and interpretation. Cite each consequential claim. Use the output contract below; keep unknowns visible without burying the answer.
 
@@ -32,7 +32,7 @@ From this skill's actual directory:
 ```bash
 python3 scripts/run.py demo
 python3 scripts/run.py doctor
-python3 scripts/run.py report ayudas_shortlist --json '{"query": "digitalización", "limit": 3}'
+python3 scripts/run.py report ayudas_opportunities --json '{"query": "digitalización", "limit": 3}'
 ```
 
 `demo` is offline and labelled as a saved snapshot. `report` queries official sources. Use `--format html --output informe.html` for a portable report. Existing files are protected unless the user explicitly chooses `--force`. `call` retains JSON. Prefer `--stdin`/`--input` for user arguments; never interpolate untrusted input into shell syntax.

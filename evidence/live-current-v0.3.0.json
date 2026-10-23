@@ -1,0 +1,57 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-23T08:51:59.983508+00:00",
+  "scope": "Current read-only requests using exact documented demo arguments. BOE/BORME dates are explicit historical query ranges. Does not validate production endpoint or infrastructure.",
+  "check": {
+    "slug": "ayudas-espana",
+    "tool": "ayudas_opportunities",
+    "arguments": {
+      "query": "digitalizaci\u00f3n",
+      "limit": 3
+    },
+    "ok": true,
+    "sources": [
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&page=0&pageSize=3&descripcion=digitalizaci%C3%B3n",
+        "retrieved_at": "2026-10-23T08:51:18.745599+00:00",
+        "sha256": "baca45916266ec647b1e0f9fe2e53ad926a2f8cb5883d6724a1780a3d21995e6",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=935677",
+        "retrieved_at": "2026-10-23T08:51:19.761918+00:00",
+        "sha256": "30a8aaaa03f2995cc84af15c78d26706dba2318ff41ab5c6c22fa1244c167519",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=933791",
+        "retrieved_at": "2026-10-23T08:51:20.665218+00:00",
+        "sha256": "c0f2982bba2b63398a5af2fcba442b4b5d1786edd4e6546a5ea7862077014689",
+        "cache_hit": false
+      },
+      {
+        "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=932105",
+        "retrieved_at": "2026-10-23T08:51:21.685069+00:00",
+        "sha256": "0b53566809f3b57e7da3654b577c6cfbb4115c1cd5e9dc26a3afb8b6e7baebb6",
+        "cache_hit": false
+      }
+    ],
+    "coverage": {
+      "page": 0,
+      "page_size": 3,
+      "total": 732,
+      "next_page": 1,
+      "details_checked": 3,
+      "partial": false,
+      "as_of": "2026-10-23",
+      "buckets_in_returned_rows": {
+        "review_dates_and_bases": 2,
+        "possible_direct_award": 1,
+        "published_deadline_passed": 0,
+        "details_unavailable": 0
+      }
+    },
+    "error": null,
+    "duration_seconds": 6.02
+  }
+}

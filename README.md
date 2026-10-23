@@ -22,11 +22,9 @@ Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatori
 
 También: “Compara estas convocatorias por plazo, beneficiarios, documentación y próximo paso.”
 
-[Ver el informe de ejemplo](https://samihalawa.github.io/ayudas-espana/demo.html) · [Web y demostración](https://samihalawa.github.io/ayudas-espana/) · [Flujo completo](skills/ayudas-espana/references/workflow.md)
+[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/ayudas-espana/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
-
-[![Vista de Ayudas España](docs/preview.jpg)](https://samihalawa.github.io/ayudas-espana/)
 
 ## Instalar en Claude Code
 
@@ -55,7 +53,7 @@ python3 skills/ayudas-espana/scripts/run.py demo --format html --output ejemplo.
 ## Consultar y guardar un informe
 
 ```bash
-python3 skills/ayudas-espana/scripts/run.py report ayudas_shortlist --json '{"query": "digitalización", "limit": 3}'
+python3 skills/ayudas-espana/scripts/run.py report ayudas_opportunities --json '{"query": "digitalización", "limit": 3}'
 ```
 
 Añade `--format html --output informe.html` o `--format json`. No se sobrescriben archivos por defecto. `doctor` comprueba el entorno local sin consultar proveedores.

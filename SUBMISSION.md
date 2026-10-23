@@ -1,14 +1,10 @@
-# Claude review — Ayudas España 0.2.0
+# Claude review — Ayudas España 0.3.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/ayudas-espana
 
 Plugin at repository root. Stable identity: `ayudas-espana`.
-
-Public product page: https://samihalawa.github.io/ayudas-espana/
-
-Saved official-source report: https://samihalawa.github.io/ayudas-espana/demo.html
 
 ## Listing
 

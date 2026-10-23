@@ -23,14 +23,14 @@
     "Señales de concesión directa y fallos parciales explícitos."
   ],
   "critique": "Las funciones separadas obligaban a reconstruir cada convocatoria. La promesa de elegibilidad era más fuerte que la verificación disponible.",
-  "change": "Shortlist con detalle de llamadas, fechas, beneficiarios y bases; señales de concesión directa sin una falsa garantía de elegibilidad.",
+  "change": "La nueva función ayudas_opportunities lleva al usuario a una salida más directamente utilizable; Shortlist con detalle de llamadas, fechas, beneficiarios y bases; señales de concesión directa sin una falsa garantía de elegibilidad.",
   "limits": "Hasta cinco detalles por llamada. Fechas, abierto y palabras como nominativa no sustituyen bases, modificaciones y sede. No presenta solicitudes ni garantiza financiación.",
-  "tool": "ayudas_shortlist",
+  "tool": "ayudas_opportunities",
   "args": {
     "query": "digitalización",
     "limit": 3
   },
   "extra": "Empieza con ayudas_shortlist; amplía con ayudas_search y ayudas_call. No interpretes abierto:false como cierre automático. direct_award_signal es un indicio textual, no una clasificación jurídica confirmada.",
   "slug": "ayudas-espana",
-  "version": "0.2.0"
+  "version": "0.3.0"
 }

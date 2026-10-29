@@ -32,5 +32,5 @@
   },
   "extra": "Empieza con ayudas_shortlist; amplía con ayudas_search y ayudas_call. No interpretes abierto:false como cierre automático. direct_award_signal es un indicio textual, no una clasificación jurídica confirmada.",
   "slug": "ayudas-espana",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }

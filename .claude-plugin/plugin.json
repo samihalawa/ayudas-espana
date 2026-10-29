@@ -1,7 +1,7 @@
 {
   "name": "ayudas-espana",
   "displayName": "Ayudas España",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
   "author": {
     "name": "Sami Halawa",
@@ -19,8 +19,9 @@
   "homepage": "https://samihalawa.github.io/ayudas-espana/",
   "repository": "https://github.com/samihalawa/ayudas-espana",
   "icon": "./assets/icon.png",
-  "documentationUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/ayudas-espana/blob/main/TERMS.md"
+  "documentationUrl": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/README.md",
+  "supportUrl": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/TERMS.md",
+  "mcpServers": "./.mcp.json"
 }

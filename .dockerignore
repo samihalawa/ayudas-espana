@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!skills/
+!skills/ayudas-espana/
+!skills/ayudas-espana/scripts/
+!skills/ayudas-espana/scripts/**
+!skills/ayudas-espana/references/
+!skills/ayudas-espana/references/**
+!LICENSE
+!SECURITY.md
+!PRIVACY.md
+!SUPPORT.md
+**/__pycache__/
+**/*.pyc

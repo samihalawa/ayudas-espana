@@ -1,0 +1,20 @@
+{
+  "name": "ayudas-espana",
+  "interface": {
+    "displayName": "Ayudas España"
+  },
+  "plugins": [
+    {
+      "name": "ayudas-espana",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

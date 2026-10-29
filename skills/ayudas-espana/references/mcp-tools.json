@@ -1,0 +1,189 @@
+{
+  "server": "ayudas-espana",
+  "version": "0.4.0",
+  "tools": [
+    {
+      "name": "ayudas_search",
+      "title": "ayudas search",
+      "description": "Search official BDNS call descriptions with explicit pagination. A result is not proof that a call is open, competitive or suitable.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "default": 0
+          },
+          "page_size": {
+            "type": "integer",
+            "default": 10
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "ayudas_call",
+      "title": "ayudas call",
+      "description": "Retrieve the official BDNS call record by its public number, not its internal search ID. Preserve eligibility and deadline fields as published.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "bdns_number": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "bdns_number"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "ayudas_shortlist",
+      "title": "ayudas shortlist",
+      "description": "Search and inspect up to five BDNS records. Distinguishes date triage and direct-award signals from verified eligibility; partial failures stay visible.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "type": "integer",
+            "default": 5
+          },
+          "as_of": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "ayudas_opportunities",
+      "title": "ayudas opportunities",
+      "description": "Actionability triage of up to five BDNS records based on published fields; no invented eligibility or grant approval.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "type": "integer",
+            "default": 5
+          },
+          "as_of": {
+            "type": "string",
+            "default": ""
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    },
+    {
+      "name": "ayudas_espana_demo",
+      "title": "Ayudas España · ejemplo guardado",
+      "description": "Read the bundled dated example without network access. It is historical, never live.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "ayudas_espana_report",
+      "title": "Ayudas España · informe",
+      "description": "Return a deterministic Markdown, HTML or JSON report for one product operation or the saved example. Writes no files; preserve source dates and partial coverage.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "operation": {
+            "type": "string",
+            "enum": [
+              "ayudas_search",
+              "ayudas_call",
+              "ayudas_shortlist",
+              "ayudas_opportunities",
+              "ayudas_espana_demo"
+            ]
+          },
+          "arguments": {
+            "type": "object",
+            "default": {}
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "markdown",
+              "html",
+              "json"
+            ],
+            "default": "markdown"
+          }
+        },
+        "required": [
+          "operation"
+        ],
+        "additionalProperties": false
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": true
+      }
+    }
+  ]
+}

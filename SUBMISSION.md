@@ -1,4 +1,4 @@
-# Claude review — Ayudas España 0.2.0
+# Claude review — Ayudas España 0.4.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
@@ -6,30 +6,28 @@ Repository: https://github.com/samihalawa/ayudas-espana
 
 Plugin at repository root. Stable identity: `ayudas-espana`.
 
-Public product page: https://samihalawa.github.io/ayudas-espana/
-
-Saved official-source report: https://samihalawa.github.io/ayudas-espana/demo.html
-
-## Listing
+## Listing and runtime
 
 Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.
 
 Audience: Autónomos, empresas y entidades que buscan financiación pública.
 
-First prompt: Soy autónomo en Madrid: busca ayudas de digitalización y dime qué debo comprobar.
+One declared local stdio MCP process provides the scoped adapters, historical demo and deterministic report text. Python 3.11+ is required; there are no third-party runtime dependencies, account credentials, hidden hooks, shell launchers or remote executables. No publisher-hosted MCP endpoint is claimed.
 
 ## Reviewer walkthrough
 
-Install with `/plugin install ayudas-espana --marketplace samihalawa/ayudas-espana`. Ask for an example: `demo` must be labelled as a saved snapshot, not live. The captured response is in `skills/ayudas-espana/references/demo.json`. Run the live README example in an authorized Python 3.11+ environment, inspect scope and source dates, then export HTML. The report must not execute source text or load external assets.
+Install the exact candidate marketplace and verify the declared server appears. Call `ayudas_espana_demo` and inspect its dated historical marker. Call `ayudas_espana_report` with the demo operation and `format: html`; it returns escaped portable text, with no file write or external assets. Exercise the domain operation `ayudas_opportunities` only with an authorized official-source query and inspect dates, coverage, provenance and partial errors.
 
-Negative fixtures in `tests/test_core.py` are synthetic regressions, not live user tests. No credentials, product account, purchase or API key is required. This is a skills package, not a hosted MCP service.
-
-## Included review materials
-
-README, CHANGELOG, real icon, support/privacy/terms, static page source in docs/, saved official-source example, executable tests and versioned evidence. Dataset/service rights are separate from the MIT software licence.
-
-## Scope
+## Boundaries and disclosure
 
 Hasta cinco detalles por llamada. Fechas, abierto y palabras como nominativa no sustituyen bases, modificaciones y sede. No presenta solicitudes ni garantiza financiación.
 
-Read evidence for the actual completed checks. CI is an inactive template. Source publication, package validation, installation, user acceptance, directory review and adoption are separate states. No official listing or approval is claimed. Submit through https://claude.ai/directory/manage under the intended verified publisher identity; applicable publisher attestations remain with the owner.
+README and PRIVACY.md disclose official query parameters, network-address exposure, optional host-controlled saved files and publisher non-retention. System proxy routes and TLS remain in force; ambient proxy credentials are rejected before transport. Development tests use minimal subprocess environments. No official affiliation or source-endpoint ownership is asserted.
+
+## Directory review status
+
+Local protocol, security regressions and strict schema validation do not certify policy compliance. The prior portal findings require current revalidation and reviewer disposition. Public API access and reuse terms do not establish ownership/control under Directory Policy 3.F or its approved-connector exception. The owner explicitly authorized the four Claude declarations in the 29 October conversation. Provider policy interpretation and fresh scan disposition still require review; this document does not claim approval.
+
+## OpenAI desktop review preparation
+
+Root plugin.json includes five positive and three negative review specifications, three starter prompts, release notes, non-commerce disclosure and Spanish listing translations. Countries are omitted to preserve existing targeting; no new region decision is inferred. Model-invocation cases are not recorded as passed. No reviewer credentials are needed for public official-source reads. A real intended-host demo recording URL and OpenAI organization eligibility remain provider-review requirements; no fabricated recording or remote endpoint is supplied. Private account updates and source distribution are distinct from public directory approval.

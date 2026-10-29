@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "ayudas-espana": {
+      "command": "python3",
+      "args": [
+        "${PLUGIN_ROOT}/skills/ayudas-espana/scripts/mcp_server.py"
+      ],
+      "cwd": "${PLUGIN_ROOT}",
+      "type": "stdio"
+    }
+  }
+}

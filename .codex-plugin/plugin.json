@@ -9,19 +9,18 @@
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Soy autónomo en Madrid: busca ayudas de digitalización y dime qué debo comprobar.",
-      "Compara estas convocatorias por plazo, beneficiarios, documentación y próximo paso.",
-      "Muéstrame un ejemplo guardado sin presentarlo como una convocatoria actual."
+      "Find Spanish digitalisation grants and verify who can actually apply.",
+      "Check this BDNS call against my profile and identify missing evidence."
     ],
     "developerName": "Sami Halawa",
     "displayName": "Ayudas España",
-    "logo": "./assets/icon.png",
-    "longDescription": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.\n\nAutónomos, empresas y entidades que buscan financiación pública. Búsqueda y detalle de hasta cinco convocatorias por consulta. Plazos, beneficiarios y bases visibles en la misma ficha. Señales de concesión directa y fallos parciales explícitos.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nHasta cinco detalles por llamada. Fechas, abierto y palabras como nominativa no sustituyen bases, modificaciones y sede. No presenta solicitudes ni garantiza financiación.",
-    "shortDescription": "Ayudas y próximos pasos",
+    "logo": "./assets/logo.png",
+    "longDescription": "Compare Spanish public grant calls with dates, beneficiaries, bases and explicit eligibility limits.\n\nUse bounded read-only official-source queries, a clearly dated offline example, and source-linked Markdown, HTML or JSON reports. Review returned dates, identifiers, provenance, errors and unexamined coverage before acting. No official affiliation, eligibility, legal, title, solvency or reuse-rights certification is claimed.\n\nRuns a bundled local stdio MCP on compatible desktop hosts with Python 3.11+ and authorized network access. No API key, account, dependency installation, hosted publisher service, telemetry or purchase functionality is provided. Reports return text without writing files. An unavailable local server is disclosed; scripts are never an execution fallback. This package does not create a web/mobile remote connection.",
+    "shortDescription": "Screen Spanish grants",
     "websiteURL": "https://samihalawa.github.io/ayudas-espana/",
-    "supportURL": "https://github.com/samihalawa/ayudas-espana/blob/main/SUPPORT.md",
-    "privacyPolicyURL": "https://github.com/samihalawa/ayudas-espana/blob/main/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/samihalawa/ayudas-espana/blob/main/TERMS.md"
+    "supportURL": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/SUPPORT.md",
+    "privacyPolicyURL": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/samihalawa/ayudas-espana/blob/release/v0.3.0-local/TERMS.md"
   },
   "keywords": [
     "spain",
@@ -35,6 +34,8 @@
   "license": "MIT",
   "name": "ayudas-espana",
   "skills": "./skills",
-  "version": "0.2.0",
-  "homepage": "https://samihalawa.github.io/ayudas-espana/"
+  "version": "0.4.0",
+  "homepage": "https://samihalawa.github.io/ayudas-espana/",
+  "requires_local_executor": true,
+  "mcpServers": "./mcp.json"
 }

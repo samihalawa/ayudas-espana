@@ -1,0 +1,144 @@
+{
+  "version": "0.3.0",
+  "checked_at": "2026-10-20T16:59:24.507038+00:00",
+  "core_sha256": "303c3b3fd75b1544cf7120d5d37ef61f7d2445e508381af01ef8a25b6df6d530",
+  "scope": "Official-provider adapter smoke checks; not model-based task acceptance or adoption.",
+  "passed": 4,
+  "total": 4,
+  "tests": [
+    {
+      "tool": "ayudas_opportunities",
+      "arguments": {
+        "query": "digitalización",
+        "limit": 3
+      },
+      "ok": true,
+      "duration_seconds": 6.08,
+      "coverage": {
+        "page": 0,
+        "page_size": 3,
+        "total": 732,
+        "next_page": 1,
+        "details_checked": 3,
+        "partial": false,
+        "as_of": "2026-10-20",
+        "buckets_in_returned_rows": {
+          "review_dates_and_bases": 2,
+          "possible_direct_award": 1,
+          "published_deadline_passed": 0,
+          "details_unavailable": 0
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&page=0&pageSize=3&descripcion=digitalizaci%C3%B3n",
+          "retrieved_at": "2026-10-20T16:58:56.865338+00:00",
+          "sha256": "2ea75d5a22f25ed22e8205e60300737db7da3a81d9838a89c2476f9d7767d8a7",
+          "cache_hit": false
+        },
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=935677",
+          "retrieved_at": "2026-10-20T16:58:57.594936+00:00",
+          "sha256": "30a8aaaa03f2995cc84af15c78d26706dba2318ff41ab5c6c22fa1244c167519",
+          "cache_hit": false
+        },
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=933791",
+          "retrieved_at": "2026-10-20T16:58:59.689203+00:00",
+          "sha256": "c0f2982bba2b63398a5af2fcba442b4b5d1786edd4e6546a5ea7862077014689",
+          "cache_hit": false
+        },
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=932105",
+          "retrieved_at": "2026-10-20T16:59:00.289802+00:00",
+          "sha256": "0b53566809f3b57e7da3654b577c6cfbb4115c1cd5e9dc26a3afb8b6e7baebb6",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "ayudas_shortlist",
+      "arguments": {
+        "query": "digital",
+        "limit": 2
+      },
+      "ok": true,
+      "duration_seconds": 3.0,
+      "coverage": {
+        "page": 0,
+        "page_size": 2,
+        "total": 3348,
+        "next_page": 1,
+        "details_checked": 2,
+        "partial": false,
+        "as_of": "2026-10-20"
+      },
+      "sources": [
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&page=0&pageSize=2&descripcion=digital",
+          "retrieved_at": "2026-10-20T16:59:04.725061+00:00",
+          "sha256": "5d9a524dfbc85f09911c3b359e4a25145a24d921b1fe2e794cd9b0eb30043d78",
+          "cache_hit": false
+        },
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=936275",
+          "retrieved_at": "2026-10-20T16:59:05.181436+00:00",
+          "sha256": "fff30d3c698a5da81844e8226194d1a351711905067fdf03f85a6d3af0c6f77a",
+          "cache_hit": false
+        },
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=936207",
+          "retrieved_at": "2026-10-20T16:59:05.641423+00:00",
+          "sha256": "d58cf298e89532aee36ed614e8e4999b58662752470e53800e3d4405f44dc5af",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "ayudas_search",
+      "arguments": {
+        "query": "digital",
+        "page_size": 2
+      },
+      "ok": true,
+      "duration_seconds": 0.0,
+      "coverage": {
+        "page": 0,
+        "page_size": 2,
+        "total": 3348,
+        "next_page": 1
+      },
+      "sources": [
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda?vpd=GE&page=0&pageSize=2&descripcion=digital",
+          "retrieved_at": "2026-10-20T16:59:04.725061+00:00",
+          "sha256": "5d9a524dfbc85f09911c3b359e4a25145a24d921b1fe2e794cd9b0eb30043d78",
+          "cache_hit": true
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "ayudas_call",
+      "arguments": {
+        "bdns_number": "936585"
+      },
+      "ok": true,
+      "duration_seconds": 0.52,
+      "coverage": {
+        "bdns_number": "936585"
+      },
+      "sources": [
+        {
+          "url": "https://www.infosubvenciones.es/bdnstrans/api/convocatorias?numConv=936585",
+          "retrieved_at": "2026-10-20T16:59:07.525794+00:00",
+          "sha256": "0d046795c5a4a6ae1f0028ae1c4f9088c0b90f9f15b4b212ae86522a120b5d9f",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    }
+  ]
+}

@@ -13,5 +13,10 @@
     "name": "ayudas_shortlist",
     "signature": "(query: 'str', page: 'int' = 0, limit: 'int' = 5, as_of: 'str' = '') -> 'dict[str, Any]'",
     "description": "Search and inspect up to five BDNS records. Distinguishes date triage and direct-award signals from verified eligibility; partial failures stay visible."
+  },
+  {
+    "name": "ayudas_opportunities",
+    "signature": "(query: 'str', page: 'int' = 0, limit: 'int' = 5, as_of: 'str' = '') -> 'dict[str, Any]'",
+    "description": "Actionability triage of up to five BDNS records based on published fields; no invented eligibility or grant approval."
   }
 ]

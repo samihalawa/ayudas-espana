@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "ayudas-espana": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/skills/ayudas-espana/scripts/mcp_server.py"
+      ]
+    }
+  }
+}

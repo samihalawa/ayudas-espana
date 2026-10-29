@@ -1,7 +1,7 @@
 {
   "name": "ayudas-espana",
   "displayName": "Ayudas España",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
   "author": {
     "name": "Sami Halawa",

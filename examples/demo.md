@@ -1,3 +1,5 @@
+> Documento histórico de una edición anterior. Conserva sus datos, fecha y procedencia; no es una consulta actual ni una función de ejecución de esta habilidad.
+
 # Ayudas España
 
 De una ayuda publicada a un próximo paso claro.

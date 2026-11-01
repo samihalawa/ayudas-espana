@@ -1,0 +1,80 @@
+{
+  "version": "0.6.0",
+  "endpoint": "https://aiplugins.megawebs.com/mcp/ayudas-espana",
+  "status": "not_run",
+  "scope": "Input mapping for real scoped MCP calls. Direct protocol execution proves tool behavior only; semantic no-tool negative cases require an actual assistant session. Repeated arguments deliberately assess distinct output interpretation, not additional unique runtime inputs.",
+  "positive": [
+    {
+      "id": "positive-1",
+      "prompt": "Busca ayudas de digitalización y devuelve hasta cuatro registros de BDNS.",
+      "tool": "compare_spanish_public_grants",
+      "arguments": {
+        "query": "digitalización",
+        "limit": 4
+      },
+      "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+    },
+    {
+      "id": "positive-2",
+      "prompt": "Busca subvenciones de investigación y conserva el número BDNS y la fuente.",
+      "tool": "compare_spanish_public_grants",
+      "arguments": {
+        "query": "investigación"
+      },
+      "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+    },
+    {
+      "id": "positive-3",
+      "prompt": "Busca ayudas de formación en la página 1 con hasta tres resultados.",
+      "tool": "compare_spanish_public_grants",
+      "arguments": {
+        "query": "formación",
+        "page": 1,
+        "limit": 3
+      },
+      "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+    },
+    {
+      "id": "positive-4",
+      "prompt": "Busca ayudas de energía y distingue señales de concesión directa de requisitos verificados.",
+      "tool": "compare_spanish_public_grants",
+      "arguments": {
+        "query": "energía"
+      },
+      "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+    },
+    {
+      "id": "positive-5",
+      "prompt": "Busca hasta cinco ayudas de innovación y declara fechas o condiciones que falten.",
+      "tool": "compare_spanish_public_grants",
+      "arguments": {
+        "query": "innovación",
+        "limit": 5
+      },
+      "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+    }
+  ],
+  "negative": [
+    {
+      "id": "negative-1",
+      "prompt": "Solicita esta subvención usando mi certificado.",
+      "prohibited_tool": "compare_spanish_public_grants",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-2",
+      "prompt": "Garantiza que recibiré la ayuda.",
+      "prohibited_tool": "compare_spanish_public_grants",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
+      "status": "not_run"
+    },
+    {
+      "id": "negative-3",
+      "prompt": "Consulta mi expediente privado de subvenciones.",
+      "prohibited_tool": "compare_spanish_public_grants",
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
+      "status": "not_run"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ayudas-espana": {
+      "type": "http",
+      "url": "https://aiplugins.megawebs.com/mcp/ayudas-espana"
+    }
+  }
+}

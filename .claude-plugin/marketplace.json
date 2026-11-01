@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
-    "version": "0.5.0"
+    "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+    "version": "0.6.0"
   },
   "plugins": [
     {
       "name": "ayudas-espana",
       "source": "./",
-      "description": "Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.",
-      "version": "0.5.0"
+      "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+      "version": "0.6.0"
     }
   ]
 }

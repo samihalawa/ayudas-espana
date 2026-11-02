@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
-    "version": "0.6.0"
+    "version": "0.6.2"
   },
   "plugins": [
     {
       "name": "ayudas-espana",
       "source": "./",
       "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
-      "version": "0.6.0"
+      "version": "0.6.2"
     }
   ]
 }

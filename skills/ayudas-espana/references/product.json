@@ -25,7 +25,7 @@
   "limits": "Las bases, modificaciones y sede oficial determinan el acceso. Los plazos y señales del buscador no acreditan elegibilidad ni estado actual. No presenta solicitudes ni garantiza financiación.",
   "extra": "Comprueba convocatoria, bases y modificaciones; conserva el número BDNS y el alcance de la búsqueda. Una ayuda nominativa o directa no es necesariamente accesible al usuario.",
   "slug": "ayudas-espana",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

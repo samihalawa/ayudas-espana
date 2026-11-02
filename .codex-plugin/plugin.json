@@ -17,10 +17,10 @@
     "logo": "./assets/logo.png",
     "longDescription": "Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "shortDescription": "Screen Spanish grants",
-    "websiteURL": "https://samihalawa.github.io/ayudas-espana/",
-    "supportURL": "https://github.com/samihalawa/ayudas-espana/blob/main/SUPPORT.md",
-    "privacyPolicyURL": "https://github.com/samihalawa/ayudas-espana/blob/main/PRIVACY.md",
-    "termsOfServiceURL": "https://github.com/samihalawa/ayudas-espana/blob/main/TERMS.md"
+    "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
+    "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
+    "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
+    "termsOfServiceURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/terms"
   },
   "keywords": [
     "spain",
@@ -34,8 +34,8 @@
   "license": "MIT",
   "name": "ayudas-espana",
   "skills": "./skills",
-  "version": "0.6.0",
-  "homepage": "https://samihalawa.github.io/ayudas-espana/",
+  "version": "0.6.2",
+  "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "extensions": {
     "com.openai": {
       "review": {

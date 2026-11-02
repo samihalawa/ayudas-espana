@@ -1,4 +1,4 @@
-# Acceso al conector — Ayudas España 0.6.0
+# Acceso al conector — Ayudas España 0.6.2
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Herramienta: `compare_spanish_public_grants`. Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.
 

@@ -9,14 +9,15 @@
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Find Spanish digitalisation grants and verify who can actually apply.",
-      "Check this BDNS call against my profile and identify missing evidence."
+      "Busca en BDNS hasta cuatro ayudas de digitalización y cita sus fichas oficiales.",
+      "Busca ayudas de energía en BDNS y señala posibles concesiones directas.",
+      "Busca ayudas de formación y separa los plazos publicados de las comprobaciones pendientes."
     ],
     "developerName": "Sami Halawa",
     "displayName": "Ayudas España",
     "logo": "./assets/logo.png",
-    "longDescription": "Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
-    "shortDescription": "Screen Spanish grants",
+    "longDescription": "Search Spain’s public grants database (BDNS) by topic. Review up to five records per page with their official links, published application dates and beneficiary categories where available. Group records by published deadlines, potential direct-award signals and checks still needed before applying.",
+    "shortDescription": "Find Spanish public grants",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
     "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
@@ -34,7 +35,7 @@
   "license": "MIT",
   "name": "ayudas-espana",
   "skills": "./skills",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "extensions": {
     "com.openai": {

@@ -1,7 +1,7 @@
 {
   "name": "ayudas-espana",
   "displayName": "Ayudas España",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
   "author": {
     "name": "Sami Halawa",

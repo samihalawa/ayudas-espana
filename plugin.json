@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+  "description": "Consulta registros reales de BDNS por t\u00e9rmino y p\u00e1gina; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,14 +12,15 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Find Spanish digitalisation grants and verify who can actually apply.",
-          "Check this BDNS call against my profile and identify missing evidence."
+          "Busca en BDNS hasta cuatro ayudas de digitalizaci\u00f3n y cita sus fichas oficiales.",
+          "Busca ayudas de energ\u00eda en BDNS y se\u00f1ala posibles concesiones directas.",
+          "Busca ayudas de formaci\u00f3n y separa los plazos publicados de las comprobaciones pendientes."
         ],
         "developerName": "Sami Halawa",
-        "displayName": "Ayudas España",
+        "displayName": "Ayudas Espa\u00f1a",
         "logo": "./assets/logo.png",
-        "longDescription": "Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
-        "shortDescription": "Screen Spanish grants",
+        "longDescription": "Search Spain\u2019s public grants database (BDNS) by topic. Review up to five records per page with their official links, published application dates and beneficiary categories where available. Group records by published deadlines, potential direct-award signals and checks still needed before applying.",
+        "shortDescription": "Find Spanish public grants",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
         "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
@@ -27,56 +28,56 @@
       },
       "review": {
         "prompts": [
-          "Busca ayudas de digitalización y devuelve hasta cuatro registros de BDNS.",
-          "Busca subvenciones de investigación y conserva el número BDNS y la fuente.",
-          "Busca ayudas de formación en la página 1 con hasta tres resultados."
+          "Busca en la primera p\u00e1gina de BDNS hasta cuatro ayudas de digitalizaci\u00f3n. Incluye el n\u00famero BDNS, las fechas publicadas y el enlace oficial.",
+          "Busca ayudas de digitalizaci\u00f3n en la p\u00e1gina de \u00edndice 1 de BDNS, con un m\u00e1ximo de tres registros. Indica qu\u00e9 p\u00e1gina revisaste.",
+          "Busca hasta tres ayudas de investigaci\u00f3n en BDNS y muestra los tipos de beneficiario que consten en las fichas."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
         "test_cases": {
           "positive": [
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 1.",
-              "prompt": "Busca ayudas de digitalización y devuelve hasta cuatro registros de BDNS.",
+              "description": "Find four public grant records by topic",
+              "prompt": "Busca en la primera p\u00e1gina de BDNS hasta cuatro ayudas de digitalizaci\u00f3n. Incluye el n\u00famero BDNS, las fechas publicadas y el enlace oficial.",
               "tools_triggered": "compare_spanish_public_grants",
-              "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+              "expected_behavior": "Return at most four records from the first page with their BDNS numbers, published dates when available and official links. Identify any missing dates. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 2.",
-              "prompt": "Busca subvenciones de investigación y conserva el número BDNS y la fuente.",
+              "description": "Read a specific results page",
+              "prompt": "Busca ayudas de digitalizaci\u00f3n en la p\u00e1gina de \u00edndice 1 de BDNS, con un m\u00e1ximo de tres registros. Indica qu\u00e9 p\u00e1gina revisaste.",
               "tools_triggered": "compare_spanish_public_grants",
-              "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+              "expected_behavior": "Return at most three records and identify page index 1 as the second results page. Report the next page when the source provides one. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 3.",
-              "prompt": "Busca ayudas de formación en la página 1 con hasta tres resultados.",
+              "description": "Read published beneficiary information",
+              "prompt": "Busca hasta tres ayudas de investigaci\u00f3n en BDNS y muestra los tipos de beneficiario que consten en las fichas.",
               "tools_triggered": "compare_spanish_public_grants",
-              "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+              "expected_behavior": "Cite the BDNS records and report published beneficiary types only when returned. Separate those categories from any individual eligibility determination. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 4.",
-              "prompt": "Busca ayudas de energía y distingue señales de concesión directa de requisitos verificados.",
+              "description": "Distinguish direct-award signals",
+              "prompt": "Busca hasta cinco ayudas de energ\u00eda en BDNS y distingue posibles concesiones directas de convocatorias que requieren m\u00e1s revisi\u00f3n.",
               "tools_triggered": "compare_spanish_public_grants",
-              "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+              "expected_behavior": "Label possible direct-award signals as preliminary. Separate them from records requiring review of dates and bases and link to the official records. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 5.",
-              "prompt": "Busca hasta cinco ayudas de innovación y declara fechas o condiciones que falten.",
+              "description": "Separate published dates from submission status",
+              "prompt": "Busca hasta dos ayudas de formaci\u00f3n en BDNS y se\u00f1ala qu\u00e9 plazos constan y qu\u00e9 queda pendiente de comprobar en la sede.",
               "tools_triggered": "compare_spanish_public_grants",
-              "expected_behavior": "Call compare_spanish_public_grants using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Review real BDNS grant records by search term and page; compare dates, source links and pending checks without promising eligibility."
+              "expected_behavior": "For at most two records, give published dates and indicate which bases or application-portal checks remain. Published dates alone do not establish that applications can be submitted. If the source fails or only some sources respond, state the available coverage."
             }
           ],
           "negative": [
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
-              "prompt": "Solicita esta subvención usando mi certificado."
+              "description": "Filing requires the official application process. Explain that the plugin only reads public grant records and does not submit or sign an application. Do not call compare_spanish_public_grants for this request.",
+              "prompt": "Solicita esta subvenci\u00f3n usando mi certificado."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
-              "prompt": "Garantiza que recibiré la ayuda."
+              "description": "An award depends on the granting authority. Explain that the plugin can report published criteria and dates but cannot guarantee an award. Do not call compare_spanish_public_grants for this request.",
+              "prompt": "Garantiza que recibir\u00e9 la ayuda."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking compare_spanish_public_grants or claiming completion.",
+              "description": "An individual case file is outside the public BDNS search. Explain that the user can open it in the competent authority\u2019s official portal. Do not call compare_spanish_public_grants for this request.",
               "prompt": "Consulta mi expediente privado de subvenciones."
             }
           ]
@@ -84,11 +85,11 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "0.6.2 moves product, privacy, terms and support pages to the unified Megawebs Plugins website. The hosted read-only tools and their behavior are unchanged.",
+        "release_notes": "Adds review examples for BDNS search terms, result limits and page navigation.",
         "translations": {
           "es-ES": {
-            "subtitle": "Ayudas y próximos pasos",
-            "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.\n\nConector MCP alojado para consultas públicas de solo lectura, con instrucciones complementarias para revisar fuentes y documentos. Conserva fechas, identificadores, enlaces y límites. No requiere Python local ni claves del editor. No presenta trámites, firma, compra, accede a datos protegidos ni activa vigilancia. Los ejemplos guardados son históricos."
+            "subtitle": "Ayudas y pr\u00f3ximos pasos",
+            "description": "Busca ayudas p\u00fablicas espa\u00f1olas por tema en la BDNS. Revisa hasta cinco fichas por p\u00e1gina con enlaces oficiales, fechas de solicitud y tipos de beneficiario cuando consten. Distingue posibles concesiones directas y se\u00f1ala qu\u00e9 bases y plazos debes comprobar antes de solicitar."
           }
         }
       }
@@ -105,7 +106,7 @@
   ],
   "license": "MIT",
   "name": "ayudas-espana",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "repository": "https://github.com/samihalawa/ayudas-espana"
 }

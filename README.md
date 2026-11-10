@@ -1,5 +1,3 @@
-![Icono de Ayudas España](assets/icon.png)
-
 # Ayudas España
 
 Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.

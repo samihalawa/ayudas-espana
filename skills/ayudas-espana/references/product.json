@@ -1,21 +1,24 @@
 {
-  "name": "Ayudas España",
+  "name": "Spain Grants & Subsidies",
   "promise": "De una ayuda publicada a un próximo paso claro.",
   "audience": "Autónomos, empresas y entidades que buscan financiación pública.",
-  "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
-  "short": "Ayudas y próximos pasos",
+  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
+  "short": "Ayudas y subvenciones",
   "source": "BDNS",
   "keywords": [
-    "subvenciones",
+    "spain",
+    "grants",
+    "subsidies",
+    "public funding",
     "ayudas",
-    "bdns",
-    "autonomos",
-    "financiacion"
+    "subvenciones",
+    "autónomos",
+    "BDNS"
   ],
   "prompts": [
-    "Soy autónomo en Madrid: busca ayudas de digitalización y dime qué debo comprobar.",
-    "Compara estas convocatorias por plazo, beneficiarios, documentación y próximo paso.",
-    "Muéstrame un ejemplo guardado sin presentarlo como una convocatoria actual."
+    "Find Spanish grants for business digitalisation and compare the published deadlines.",
+    "Busca subvenciones para autónomos y enlaza las convocatorias oficiales.",
+    "Busca ayudas de investigación en BDNS e indica beneficiarios y plazos publicados."
   ],
   "benefits": [
     "Condiciones y fechas vinculadas a sus fuentes.",
@@ -25,7 +28,7 @@
   "limits": "Las bases, modificaciones y sede oficial determinan el acceso. Los plazos y señales del buscador no acreditan elegibilidad ni estado actual. No presenta solicitudes ni garantiza financiación.",
   "extra": "Comprueba convocatoria, bases y modificaciones; conserva el número BDNS y el alcance de la búsqueda. Una ayuda nominativa o directa no es necesariamente accesible al usuario.",
   "slug": "ayudas-espana",
-  "version": "0.6.2",
+  "version": "0.6.4",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

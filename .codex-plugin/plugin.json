@@ -3,21 +3,21 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
   "interface": {
     "capabilities": [],
-    "category": "Productivity",
+    "category": "Business & Operations",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Busca en BDNS hasta cuatro ayudas de digitalización y cita sus fichas oficiales.",
-      "Busca ayudas de energía en BDNS y señala posibles concesiones directas.",
-      "Busca ayudas de formación y separa los plazos publicados de las comprobaciones pendientes."
+      "Find Spanish grants for business digitalisation and compare the published deadlines.",
+      "Busca subvenciones para autónomos y enlaza las convocatorias oficiales.",
+      "Busca ayudas de investigación en BDNS e indica beneficiarios y plazos publicados."
     ],
     "developerName": "Sami Halawa",
-    "displayName": "Ayudas España",
+    "displayName": "Spain Grants & Subsidies",
     "logo": "./assets/logo.png",
-    "longDescription": "Search Spain’s public grants database (BDNS) by topic. Review up to five records per page with their official links, published application dates and beneficiary categories where available. Group records by published deadlines, potential direct-award signals and checks still needed before applying.",
-    "shortDescription": "Find Spanish public grants",
+    "longDescription": "Find grants, subsidies and public funding in Spain for businesses, autónomos, associations and research projects. Search the official BDNS database by topic and compare published beneficiary categories, application dates and source links. Review up to five records per page and continue through further pages. Check the current call and its rules before applying: a listed record can be historical or a direct award. The connector searches public records; it does not submit applications or guarantee funding.",
+    "shortDescription": "Find grants and public funding",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
     "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
     "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
@@ -25,17 +25,18 @@
   },
   "keywords": [
     "spain",
-    "claude-plugin",
-    "subvenciones",
+    "grants",
+    "subsidies",
+    "public funding",
     "ayudas",
-    "bdns",
-    "autonomos",
-    "financiacion"
+    "subvenciones",
+    "autónomos",
+    "BDNS"
   ],
   "license": "MIT",
   "name": "ayudas-espana",
   "skills": "./skills",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "extensions": {
     "com.openai": {

@@ -1,8 +1,8 @@
-# Ayudas España
+# Spain Grants & Subsidies
 
-Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.
+Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.
 
-**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 

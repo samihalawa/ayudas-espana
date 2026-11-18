@@ -1,4 +1,4 @@
-# Revisión — Ayudas España 0.6.2
+# Revisión — Spain Grants & Subsidies 0.6.4
 
 Paquete remoto con una herramienta: `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Casos: cinco positivos y tres negativos en `plugin.json`. Las variantes cubren entradas o límites distintos; las fuentes dinámicas pueden devolver errores o cobertura parcial, que deben declararse sin fabricar resultados.
 

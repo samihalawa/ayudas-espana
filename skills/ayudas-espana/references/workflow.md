@@ -1,4 +1,4 @@
-# Procedimiento — Ayudas España
+# Procedimiento — Spain Grants & Subsidies
 
 1. Reutiliza los datos ya aportados y concreta solo el perfil que cambie la búsqueda: forma jurídica, territorio, actividad, tamaño, proyecto y fechas del gasto. No pidas NIF, datos bancarios ni credenciales para buscar. Abre el portal público de BDNS con la navegación nativa autorizada, o examina los documentos que el usuario haya aportado. Busca términos españoles concretos y registra filtros, páginas y fecha de consulta. El número público BDNS no es necesariamente el identificador interno de una URL.
 2. Para cada candidata, abre su ficha oficial, las bases completas, la convocatoria, modificaciones y sede de presentación. Empieza con una selección breve y amplíala cuando el usuario lo pida; declara las fichas examinadas. La búsqueda puede incluir convocatorias históricas, nominativas y concesiones directas. Una ayuda destinada a un beneficiario concreto no es una convocatoria abierta a todos.

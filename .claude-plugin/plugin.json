@@ -1,8 +1,8 @@
 {
   "name": "ayudas-espana",
-  "displayName": "Ayudas España",
-  "version": "0.6.3",
-  "description": "Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+  "displayName": "Spain Grants & Subsidies",
+  "version": "0.6.4",
+  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,11 +10,13 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "subvenciones",
+    "grants",
+    "subsidies",
+    "public funding",
     "ayudas",
-    "bdns",
-    "autonomos",
-    "financiacion"
+    "subvenciones",
+    "autónomos",
+    "BDNS"
   ],
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "repository": "https://github.com/samihalawa/ayudas-espana",

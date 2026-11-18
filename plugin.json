@@ -4,23 +4,23 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta registros reales de BDNS por t\u00e9rmino y p\u00e1gina; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.",
+  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
   "extensions": {
     "com.openai": {
       "interface": {
         "capabilities": [],
-        "category": "Productivity",
+        "category": "Business & Operations",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Busca en BDNS hasta cuatro ayudas de digitalizaci\u00f3n y cita sus fichas oficiales.",
-          "Busca ayudas de energ\u00eda en BDNS y se\u00f1ala posibles concesiones directas.",
-          "Busca ayudas de formaci\u00f3n y separa los plazos publicados de las comprobaciones pendientes."
+          "Find Spanish grants for business digitalisation and compare the published deadlines.",
+          "Busca subvenciones para autónomos y enlaza las convocatorias oficiales.",
+          "Busca ayudas de investigación en BDNS e indica beneficiarios y plazos publicados."
         ],
         "developerName": "Sami Halawa",
-        "displayName": "Ayudas Espa\u00f1a",
+        "displayName": "Spain Grants & Subsidies",
         "logo": "./assets/logo.png",
-        "longDescription": "Search Spain\u2019s public grants database (BDNS) by topic. Review up to five records per page with their official links, published application dates and beneficiary categories where available. Group records by published deadlines, potential direct-award signals and checks still needed before applying.",
-        "shortDescription": "Find Spanish public grants",
+        "longDescription": "Find grants, subsidies and public funding in Spain for businesses, autónomos, associations and research projects. Search the official BDNS database by topic and compare published beneficiary categories, application dates and source links. Review up to five records per page and continue through further pages. Check the current call and its rules before applying: a listed record can be historical or a direct award. The connector searches public records; it does not submit applications or guarantee funding.",
+        "shortDescription": "Find grants and public funding",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
         "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
@@ -28,9 +28,9 @@
       },
       "review": {
         "prompts": [
-          "Busca en la primera p\u00e1gina de BDNS hasta cuatro ayudas de digitalizaci\u00f3n. Incluye el n\u00famero BDNS, las fechas publicadas y el enlace oficial.",
-          "Busca ayudas de digitalizaci\u00f3n en la p\u00e1gina de \u00edndice 1 de BDNS, con un m\u00e1ximo de tres registros. Indica qu\u00e9 p\u00e1gina revisaste.",
-          "Busca hasta tres ayudas de investigaci\u00f3n en BDNS y muestra los tipos de beneficiario que consten en las fichas."
+          "Busca en la primera página de BDNS hasta cuatro ayudas de digitalización. Incluye el número BDNS, las fechas publicadas y el enlace oficial.",
+          "Busca ayudas de digitalización en la página de índice 1 de BDNS, con un máximo de tres registros. Indica qué página revisaste.",
+          "Busca hasta tres ayudas de investigación en BDNS y muestra los tipos de beneficiario que consten en las fichas."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
@@ -38,31 +38,31 @@
           "positive": [
             {
               "description": "Find four public grant records by topic",
-              "prompt": "Busca en la primera p\u00e1gina de BDNS hasta cuatro ayudas de digitalizaci\u00f3n. Incluye el n\u00famero BDNS, las fechas publicadas y el enlace oficial.",
+              "prompt": "Busca en la primera página de BDNS hasta cuatro ayudas de digitalización. Incluye el número BDNS, las fechas publicadas y el enlace oficial.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "Return at most four records from the first page with their BDNS numbers, published dates when available and official links. Identify any missing dates. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Read a specific results page",
-              "prompt": "Busca ayudas de digitalizaci\u00f3n en la p\u00e1gina de \u00edndice 1 de BDNS, con un m\u00e1ximo de tres registros. Indica qu\u00e9 p\u00e1gina revisaste.",
+              "prompt": "Busca ayudas de digitalización en la página de índice 1 de BDNS, con un máximo de tres registros. Indica qué página revisaste.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "Return at most three records and identify page index 1 as the second results page. Report the next page when the source provides one. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Read published beneficiary information",
-              "prompt": "Busca hasta tres ayudas de investigaci\u00f3n en BDNS y muestra los tipos de beneficiario que consten en las fichas.",
+              "prompt": "Busca hasta tres ayudas de investigación en BDNS y muestra los tipos de beneficiario que consten en las fichas.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "Cite the BDNS records and report published beneficiary types only when returned. Separate those categories from any individual eligibility determination. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Distinguish direct-award signals",
-              "prompt": "Busca hasta cinco ayudas de energ\u00eda en BDNS y distingue posibles concesiones directas de convocatorias que requieren m\u00e1s revisi\u00f3n.",
+              "prompt": "Busca hasta cinco ayudas de energía en BDNS y distingue posibles concesiones directas de convocatorias que requieren más revisión.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "Label possible direct-award signals as preliminary. Separate them from records requiring review of dates and bases and link to the official records. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Separate published dates from submission status",
-              "prompt": "Busca hasta dos ayudas de formaci\u00f3n en BDNS y se\u00f1ala qu\u00e9 plazos constan y qu\u00e9 queda pendiente de comprobar en la sede.",
+              "prompt": "Busca hasta dos ayudas de formación en BDNS y señala qué plazos constan y qué queda pendiente de comprobar en la sede.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "For at most two records, give published dates and indicate which bases or application-portal checks remain. Published dates alone do not establish that applications can be submitted. If the source fails or only some sources respond, state the available coverage."
             }
@@ -70,14 +70,14 @@
           "negative": [
             {
               "description": "Filing requires the official application process. Explain that the plugin only reads public grant records and does not submit or sign an application. Do not call compare_spanish_public_grants for this request.",
-              "prompt": "Solicita esta subvenci\u00f3n usando mi certificado."
+              "prompt": "Solicita esta subvención usando mi certificado."
             },
             {
               "description": "An award depends on the granting authority. Explain that the plugin can report published criteria and dates but cannot guarantee an award. Do not call compare_spanish_public_grants for this request.",
-              "prompt": "Garantiza que recibir\u00e9 la ayuda."
+              "prompt": "Garantiza que recibiré la ayuda."
             },
             {
-              "description": "An individual case file is outside the public BDNS search. Explain that the user can open it in the competent authority\u2019s official portal. Do not call compare_spanish_public_grants for this request.",
+              "description": "An individual case file is outside the public BDNS search. Explain that the user can open it in the competent authority’s official portal. Do not call compare_spanish_public_grants for this request.",
               "prompt": "Consulta mi expediente privado de subvenciones."
             }
           ]
@@ -85,11 +85,11 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Adds review examples for BDNS search terms, result limits and page navigation.",
+        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
         "translations": {
           "es-ES": {
-            "subtitle": "Ayudas y pr\u00f3ximos pasos",
-            "description": "Busca ayudas p\u00fablicas espa\u00f1olas por tema en la BDNS. Revisa hasta cinco fichas por p\u00e1gina con enlaces oficiales, fechas de solicitud y tipos de beneficiario cuando consten. Distingue posibles concesiones directas y se\u00f1ala qu\u00e9 bases y plazos debes comprobar antes de solicitar."
+            "subtitle": "Ayudas y subvenciones",
+            "description": "Busca ayudas, subvenciones y financiación pública en España para empresas, autónomos, asociaciones y proyectos de investigación. Consulta BDNS por tema y compara beneficiarios, fechas publicadas y enlaces oficiales, con hasta cinco registros por página y continuación. Contrasta la convocatoria y sus bases antes de solicitarla: puede ser histórica o de concesión directa. El conector consulta registros públicos; no presenta solicitudes ni garantiza financiación."
           }
         }
       }
@@ -97,16 +97,17 @@
   },
   "keywords": [
     "spain",
-    "claude-plugin",
-    "subvenciones",
+    "grants",
+    "subsidies",
+    "public funding",
     "ayudas",
-    "bdns",
-    "autonomos",
-    "financiacion"
+    "subvenciones",
+    "autónomos",
+    "BDNS"
   ],
   "license": "MIT",
   "name": "ayudas-espana",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "repository": "https://github.com/samihalawa/ayudas-espana"
 }

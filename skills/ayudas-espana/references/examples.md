@@ -1,4 +1,4 @@
-# Ejemplos y escenarios de revisión — Ayudas España
+# Ejemplos históricos y escenarios — Spain Grants & Subsidies
 
 Pide: «Soy autónomo en Madrid y quiero digitalizar mi actividad: localiza ayudas y separa condiciones comprobadas de requisitos pendientes». Con documentos aportados, compara las cláusulas y sus fechas sin inventar una búsqueda externa. Para una muestra, lee demo.json como documento histórico y conserva su captured_at, número BDNS y enlaces; no lo presentes como convocatoria abierta.
 

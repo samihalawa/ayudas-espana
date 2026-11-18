@@ -1,4 +1,4 @@
-# Fuentes oficiales — Ayudas España
+# Fuentes oficiales — Spain Grants & Subsidies
 
 - [BDNS public portal](https://www.infosubvenciones.es/bdnstrans/GE/es/inicio)
 - [BDNS reuse terms](https://www.infosubvenciones.es/bdnstrans/GE/es/avisolegal)

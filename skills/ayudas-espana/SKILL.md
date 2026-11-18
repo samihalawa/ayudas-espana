@@ -1,15 +1,15 @@
 ---
 name: ayudas-espana
-description: "Buscar y contrastar ayudas públicas españolas en BDNS; revisar bases, beneficiarios, fechas y documentación de una convocatoria aportada por el usuario."
+description: "Use when the user wants to find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links."
 ---
 
-# Ayudas España
+# Spain Grants & Subsidies
 
 De una ayuda publicada a un próximo paso claro. Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.
 
 ## Uso
 
-Esta edición 0.6.2 incluye el conector MCP alojado `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Úsalo para su consulta pública de solo lectura: Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.4 incluye el conector MCP alojado `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Úsalo para su consulta pública de solo lectura: Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 

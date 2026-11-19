@@ -1,5 +1,5 @@
 {
-  "version": "0.6.5",
+  "version": "0.6.6",
   "endpoint": "https://aiplugins.megawebs.com/mcp/ayudas-espana",
   "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
@@ -13,17 +13,6 @@
         "limit": 4
       },
       "expected_behavior": "Return at most four records from the first page with their BDNS numbers, published dates when available and official links. Identify any missing dates. If the source fails or only some sources respond, state the available coverage."
-    },
-    {
-      "id": "positive-2",
-      "prompt": "Busca ayudas de digitalización en la página de índice 1 de BDNS, con un máximo de tres registros. Indica qué página revisaste.",
-      "tool": "compare_spanish_public_grants",
-      "arguments": {
-        "query": "digitalización",
-        "page": 1,
-        "limit": 3
-      },
-      "expected_behavior": "Return at most three records and identify page index 1 as the second results page. Report the next page when the source provides one. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",

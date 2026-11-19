@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.",
-    "version": "0.6.5"
+    "version": "0.6.6"
   },
   "plugins": [
     {
       "name": "ayudas-espana",
       "source": "./",
       "description": "Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.",
-      "version": "0.6.5"
+      "version": "0.6.6"
     }
   ]
 }

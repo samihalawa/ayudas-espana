@@ -2,7 +2,7 @@
 
 Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.
 
-Versión 0.6.5: `compare_spanish_public_grants` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
+Versión 0.6.6: `compare_spanish_public_grants` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
 
 ## Descubrimiento y primera tarea
 

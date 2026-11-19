@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
+  "description": "Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,15 +12,15 @@
         "category": "Business & Operations",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Find Spanish grants for business digitalisation and compare the published deadlines.",
-          "Busca subvenciones para autónomos y enlaza las convocatorias oficiales.",
-          "Busca ayudas de investigación en BDNS e indica beneficiarios y plazos publicados."
+          "Busca ayudas de digitalización en España y compara los plazos y beneficiarios publicados.",
+          "Find grants in Spain for research projects and link the official calls.",
+          "Busca subvenciones para autónomos en BDNS y explica qué requisitos debo comprobar."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Spain Grants & Subsidies",
         "logo": "./assets/logo.png",
-        "longDescription": "Find grants, subsidies and public funding in Spain for businesses, autónomos, associations and research projects. Search the official BDNS database by topic and compare published beneficiary categories, application dates and source links. Review up to five records per page and continue through further pages. Check the current call and its rules before applying: a listed record can be historical or a direct award. The connector searches public records; it does not submit applications or guarantee funding.",
-        "shortDescription": "Find grants and public funding",
+        "longDescription": "Find public funding opportunities in Spain (España) for your business, association or research project. Search BDNS by topic and compare the returned calls, published beneficiary categories, dates and original links in one sourced answer. Review up to five records per page and continue when useful. Check the current call and its rules before applying: a listed record can be historical or a direct award. The connector searches public records; it does not submit applications or guarantee funding.",
+        "shortDescription": "Grants and subsidies in Spain",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
         "supportURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/ayudas-espana/privacy",
@@ -65,6 +65,12 @@
               "prompt": "Busca hasta dos ayudas de formación en BDNS y señala qué plazos constan y qué queda pendiente de comprobar en la sede.",
               "tools_triggered": "compare_spanish_public_grants",
               "expected_behavior": "For at most two records, give published dates and indicate which bases or application-portal checks remain. Published dates alone do not establish that applications can be submitted. If the source fails or only some sources respond, state the available coverage."
+            },
+            {
+              "description": "Recognize the user task without naming the plugin",
+              "prompt": "Necesito financiación pública para digitalizar mi negocio en España. Busca convocatorias y compara las fechas publicadas.",
+              "tools_triggered": "compare_spanish_public_grants",
+              "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
             }
           ],
           "negative": [
@@ -85,10 +91,10 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
+        "release_notes": "Improved Spanish and English discovery, first-use prompts and sourced result guidance across Spain utilities. No new data access, payment features or background monitoring.",
         "translations": {
           "es-ES": {
-            "subtitle": "Ayudas y subvenciones",
+            "subtitle": "Ayudas públicas de España",
             "description": "Busca ayudas, subvenciones y financiación pública en España para empresas, autónomos, asociaciones y proyectos de investigación. Consulta BDNS por tema y compara beneficiarios, fechas publicadas y enlaces oficiales, con hasta cinco registros por página y continuación. Contrasta la convocatoria y sus bases antes de solicitarla: puede ser histórica o de concesión directa. El conector consulta registros públicos; no presenta solicitudes ni garantiza financiación."
           }
         }
@@ -97,6 +103,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "grants",
     "subsidies",
     "public funding",
@@ -107,7 +115,7 @@
   ],
   "license": "MIT",
   "name": "ayudas-espana",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/ayudas-espana",
   "repository": "https://github.com/samihalawa/ayudas-espana"
 }

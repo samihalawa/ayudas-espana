@@ -1,22 +1,21 @@
 # Spain Grants & Subsidies
 
-Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.
+Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.
 
-**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
-```bash
-/plugin install ayudas-espana --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
-```
+Instalación y conexión: [abrir la página del producto](https://aiplugins.megawebs.com/plugins/ayudas-espana). Elige allí las instrucciones del anfitrión que utilices.
 
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/ayudas-espana` mediante Streamable HTTP y expone `compare_spanish_public_grants`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Busca ayudas de digitalización y devuelve hasta cuatro registros de BDNS.
+> Busca ayudas de digitalización en España y compara los plazos y beneficiarios publicados.
 
-- Busca subvenciones de investigación y conserva el número BDNS y la fuente.
-- Busca ayudas de formación en la página 1 con hasta tres resultados.
+- Find grants in Spain for research projects and link the official calls.
+- Busca subvenciones para autónomos en BDNS y explica qué requisitos debo comprobar.
+
 
 Lee [la habilidad](skills/ayudas-espana/SKILL.md) para el procedimiento, [las fuentes](skills/ayudas-espana/references/sources.md) y [el contrato de acceso](skills/ayudas-espana/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

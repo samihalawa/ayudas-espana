@@ -1,8 +1,8 @@
 {
   "name": "ayudas-espana",
   "displayName": "Spain Grants & Subsidies",
-  "version": "0.6.4",
-  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
+  "version": "0.6.5",
+  "description": "Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "grants",
     "subsidies",
     "public funding",

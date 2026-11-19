@@ -1,4 +1,4 @@
-# Desarrollo — Spain Grants & Subsidies 0.6.4
+# Desarrollo — Spain Grants & Subsidies 0.6.5
 
 El paquete configura un MCP remoto Streamable HTTP; no contiene un servidor Python local. Contrato: `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. El servidor compartido se mantiene en `connectors/spain-assistant-mcp-apps` del repositorio privado maestro.
 

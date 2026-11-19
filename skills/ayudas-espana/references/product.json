@@ -1,12 +1,14 @@
 {
   "name": "Spain Grants & Subsidies",
-  "promise": "De una ayuda publicada a un próximo paso claro.",
+  "promise": "Encuentra ayudas de España y compara el siguiente paso.",
   "audience": "Autónomos, empresas y entidades que buscan financiación pública.",
-  "description": "Find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links.",
-  "short": "Ayudas y subvenciones",
+  "description": "Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.",
+  "short": "Ayudas públicas de España",
   "source": "BDNS",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "grants",
     "subsidies",
     "public funding",
@@ -16,19 +18,19 @@
     "BDNS"
   ],
   "prompts": [
-    "Find Spanish grants for business digitalisation and compare the published deadlines.",
-    "Busca subvenciones para autónomos y enlaza las convocatorias oficiales.",
-    "Busca ayudas de investigación en BDNS e indica beneficiarios y plazos publicados."
+    "Busca ayudas de digitalización en España y compara los plazos y beneficiarios publicados.",
+    "Find grants in Spain for research projects and link the official calls.",
+    "Busca subvenciones para autónomos en BDNS y explica qué requisitos debo comprobar."
   ],
   "benefits": [
-    "Condiciones y fechas vinculadas a sus fuentes.",
-    "Matriz de requisitos frente a los hechos aportados por el usuario.",
-    "Documentos pendientes y siguiente paso sin garantizar financiación."
+    "Convocatorias de BDNS por tema, con fecha, organismo y enlace oficial.",
+    "Comparación breve de beneficiarios y plazos publicados.",
+    "Requisitos pendientes separados de las condiciones ya verificadas."
   ],
   "limits": "Las bases, modificaciones y sede oficial determinan el acceso. Los plazos y señales del buscador no acreditan elegibilidad ni estado actual. No presenta solicitudes ni garantiza financiación.",
   "extra": "Comprueba convocatoria, bases y modificaciones; conserva el número BDNS y el alcance de la búsqueda. Una ayuda nominativa o directa no es necesariamente accesible al usuario.",
   "slug": "ayudas-espana",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "mode": "hosted-read-only-mcp-with-guidance",
   "guidance": "Consulta pública con conector MCP alojado e instrucciones complementarias; conserva fuentes, fechas y cobertura real."
 }

@@ -1,15 +1,20 @@
 ---
 name: ayudas-espana
-description: "Use when the user wants to find Spanish grants, subsidies and public funding (ayudas y subvenciones) in BDNS by topic. Compare published deadlines, beneficiaries and official application links."
+description: "Use when the user wants to find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links."
 ---
 
 # Spain Grants & Subsidies
 
-De una ayuda publicada a un próximo paso claro. Explora ayudas de BDNS, comprueba fechas y beneficiarios y distingue convocatorias de posibles concesiones directas.
+Encuentra ayudas de España y compara el siguiente paso. Find grants, subsidies and public funding in Spain (ayudas y subvenciones de España). Search BDNS by topic and compare published beneficiaries, deadlines and official links.
+## Primera consulta y resultado útil
+
+Usa el tema del proyecto para consultar BDNS. Si el usuario solo pide una primera búsqueda, no exijas un perfil completo: devuelve coincidencias y señala qué datos harían falta para revisar su encaje. Usa la herramienta MCP para su consulta soportada; si su respuesta ya resuelve la petición, no repitas esa búsqueda en el navegador. Abre documentos adicionales solo cuando la pregunta o una laguna material lo requieran. Reutiliza el contexto; pregunta solo por un dato esencial que no puedas resolver con la información o fuentes disponibles.
+
+Entrega primero la respuesta o comparación que pidió el usuario, con una tabla breve cuando ayude. Conserva enlaces oficiales, fechas, identificadores y unidades relevantes; explica los límites que cambien la interpretación junto al dato afectado. El resultado debe poder reutilizarse desde la conversación, sin publicidad, llamadas a contratar ni recomendaciones ajenas a la tarea. Propón una continuación solo cuando ayude a resolver la petición; no actives alertas, seguimiento ni funciones que no se hayan ejecutado.
 
 ## Uso
 
-Esta edición 0.6.4 incluye el conector MCP alojado `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Úsalo para su consulta pública de solo lectura: Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.5 incluye el conector MCP alojado `compare_spanish_public_grants` en `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Úsalo para su consulta pública de solo lectura: Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 

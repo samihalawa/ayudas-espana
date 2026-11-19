@@ -1,4 +1,4 @@
-# Acceso al conector — Spain Grants & Subsidies 0.6.4
+# Acceso al conector — Spain Grants & Subsidies 0.6.5
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/ayudas-espana`. Herramienta: `compare_spanish_public_grants`. Consulta registros reales de BDNS por término y página; compara fechas, enlaces y comprobaciones pendientes sin garantizar elegibilidad.
 
